@@ -1,0 +1,26 @@
+PROJETO
+===============
+
+CREATE DATABASE db_projetoescola;
+
+USE db_projetoescola;
+
+CREATE TABLE tab_aluno(
+    id int(8) AUTO_INCREMENT PRIMARY KEY,
+	nome varchar(20) not null,
+	telefone varchar(20),
+	endereco varchar(100)
+);
+
+CREATE TABLE tab_turma (
+    id int(8) AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(20) not null,
+	turno varchar(8)
+);
+
+CREATE TABLE tab_professor(
+    id int(8) AUTO_INCREMENT PRIMARY KEY,
+	nome varchar(20) not null,
+	cpf varchar(14) not null,
+	telefone varchar(20) not null
+);
